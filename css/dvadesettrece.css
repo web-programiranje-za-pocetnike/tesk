@@ -12,6 +12,7 @@
     --clr-grey-5: #617d98;
     --clr-grey-10: #f1f5f8;
     --clr-white: #ffffff;
+    --clr-red: #FF0000;
     --ff-primary: "Catamaran", sans-serif;
     --ff-secondary: "Grand Hotel", cursive;
     --transition: all 0.3s linear;
@@ -109,8 +110,96 @@ color: var(--clr-primary-light);
       border: none;
       cursor: pointer;
       box-shadow: 0 1px 3px rgba(0, 0, 0, 0.2);
+      
   }
   .btn:hover {
       color: var(--clr-primary);
       background: var(--clr-grey-1);
   }
+  /* 
+  ==================
+  SKILLS
+   */
+   .skills {
+       background: var(--clr-grey-1);
+
+   }
+   .skill {
+       padding: 2.5rem 0;
+       text-align: center;
+       transition: var(--transition);
+
+   }
+.skill-icon {
+    font-size: 2.5rem;
+    margin-bottom: 1.25rem;
+    transition: var(--transition);
+    display: inline-block;
+    color: coral;
+}
+.skill-title {
+    color: coral;
+}
+.skill-text {
+    color: var(--clr-grey-1);
+    max-width: 17rem;
+    margin: 0 auto;
+}
+
+.skill:hover {
+    background: var(--clr-grey-1);
+    box-shadow: 0 2px var(--clr-primary-light);
+}
+.skill:hover .skill-icon {
+    transform: translateY(-5px);
+}
+@media screen and (min-width: 576px) {
+.skill {
+    float: left;
+    width: 50%;
+}
+}
+@media screen and (min-width: 1200px) {
+    .skill {
+        float: left;
+        width: 25%;
+    }
+}
+/* about section */
+.about-img, .about-info {
+padding: 2rem 0;
+}
+.about-picture-container {
+    background: var(--clr-primary-light);
+    border: 0.5rem solid var(--clr-primary-light);
+    max-width: 30rem;
+    overflow: hidden;
+}
+.about-picture {
+    transition: var(--transition);
+}
+.about-picture-container:hover .about-picture {
+opacity: 0.5;
+transform: scale(1.2);
+}
+.about-text {
+    max-width: 26rem;
+    color: var(--clr-grey-5);
+}
+.about-h3 {
+    font-family: var(--ff-secondary);
+}
+.about-h2 {
+    font-family: var(--ff-primary);
+}
+@media screen and (min-width:992px) {
+.about-img, .about-info {
+    float: left;
+    width: 50%;
+}
+.about-info {
+    padding-left: 2rem;
+}
+}
+
+/* end of about  */
